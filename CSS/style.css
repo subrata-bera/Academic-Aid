@@ -1,0 +1,409 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+ width: 100%;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../Images/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+ 
+}
+.nav svg{
+  color: #fff;
+  display: none;
+}
+
+
+.nav img {
+  width: 4vmax;
+  height: 4vmax;
+}
+
+.nav .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+.nav .logo h2 {
+  text-transform: uppercase;
+  margin-left: 1vw;
+  color: #fff;
+}
+
+.nav .items {
+  margin-right: 2vw;
+  @media (min-width:600px) {
+    position: fixed;
+  }
+  right: 0;
+  z-index: 1;
+}
+
+.nav .items li,
+.start-btn {
+  list-style: none;
+  display: inline;
+  margin: 0 1.3vmin;
+  padding: 1.8vmin 1vmax;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav .items li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav .items li:hover,
+.btn:hover,
+.sgpacalbtn:hover,
+.cgpacalbtn:hover,
+.scholarship_btn:hover,.online-courses-btn:hover {
+  background-color: #0056b3;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* --------------------------------------Content----------------------------------- */
+
+.content {
+  height: 70vh;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .txt {
+  margin-left: 2vw;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content p {
+  font-size: 1.8vmax;
+  color: #fff;
+}
+
+.content button {
+  padding: 1.8vh 1.8vmax;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.content .image img {
+  width: 30vmax;
+}
+
+.content .image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------------------------------Calculator----------------------------------- */
+
+.sgpatopercentage {
+  width: 50%;
+  height: 0vh;
+  place-self: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.sgpatopercentage h3 {
+  margin-bottom: 10vh;
+}
+
+.sgpatopercentage input {
+  margin-top: 2vh;
+  width: 45%;
+  height: 8%;
+  border-radius: 15px;
+  border: none;
+  padding: 1vh 1vmax;
+  font-size: 1.8vmax;
+}
+
+.sgpatopercentage p,
+.cgpacalculator p {
+  font-size: 1.8vmax;
+}
+
+.sgpatopercentage button,
+.cgpacalculator button {
+  margin: 5vmin;
+  padding: 1.8vh 2.8vw;
+  font-size: 1.3vmax;
+  background-color: #007bff;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.cgpacalculator {
+  width: 100%;
+  height: 0vh;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.cgpacalculator .seminputs {
+  display: flex;
+  gap: 2vw;
+}
+
+.seminputs {
+  margin-top: 3vh;
+}
+
+.cgpacalculator input {
+  height: 4vh;
+  margin-top: 1.8vh;
+}
+
+.seminputs input {
+  margin-left: 0.5vw;
+}
+
+.sem1,
+.sem2,
+.sem3,
+.sem4,
+.sem5,
+.sem6,
+.sem7,
+.sem8 {
+  display: none;
+}
+
+/* ----------------------------Scholarship Section------------------------------- */
+
+.scholarship-content-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.scholarship-sub-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.scholarship p {
+  font-size: 1.5vmax;
+  width: 90%;
+  font-weight: 500;
+}
+
+.scholarship .img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scholarship .about {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.scholarship .about h2 {
+  color: #007bff;
+  box-shadow: 0px 0px 6px 0px #000;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.scholarship .img img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.scholarship_btn, .online-courses-btn {
+  padding: 2vh 2vmax;
+  border: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 10px;
+  font-size: 1.6vmax;
+}
+
+.scholarship {
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarship-list, .online-courses-list {
+  width: 0%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  position: absolute;
+  right: 0;
+  transition: 0.2s;
+  overflow-y: auto;
+  z-index: 5;
+}
+
+.scholarship-list .scholarship-name, .online-courses-list .online-courses-name {
+  width: 200px;
+  height: 100px;
+  background-color: #F0F8FF;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+#list-cut{
+  color: #fff;
+}
+.scholarship-list p {
+  font-size: 18px;
+}
+
+.scholarship-list button, .online-courses-list button {
+  padding: 4px 20px;
+  font-size: 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+}
+
+.scholarship-list button:hover, .online-courses-list button:hover {
+  background-color: #0056b3;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.scholarship-list .scholarship-name:hover, .online-courses-list .online-courses-name:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+/* ---------------------Online Courses------------------------------- */
+.online-courses-sub-content{
+  flex-direction: row-reverse;
+}
+.online-courses-list{
+  left: 0;
+}
+
+/* ------------------------------------Interview section-------------------------------- */
+.placement-preparation{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.placement-content{
+  width: 100%;
+  height: 50%;
+  background-color: #007bff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.placement-content h3{
+  font-size: 30px;
+}
+.placement-content p{
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.placement-content button{
+  padding: 10px 12px;
+  margin: 5vmin 5px 0 0;
+  font-size: 15px;
+  border: none;
+  background-color: #ffd700;
+  color: #000;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.placement-content button:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  padding: 3vmin 0;
+  text-transform: capitalize;
+}
+footer a{
+ color: #212529;
+ font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}

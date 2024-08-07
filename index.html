@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <section class="main" id="home">
+        <div class="header">
+            <div class="nav">
+                <div class="logo">
+                    <img src="Images/logo.png" alt="">
+                    <h2>Academic Aid</h2>
+                </div>
+                <div class="items">
+                    <ul>
+                        <li class="home"><a href="#home">Home</a></li>
+                        <li class="sgpa_calculate show1">SGPA to Percentage</li>
+                        <li class="cgpa_calculate show2">CGPA Calculator</li>
+                        <li class="scholarship hide"><a href="#scholarship">Scholarship</a></li>
+                        <li class="course hide"><a href="#online-courses">Online Courses</a></li>
+                        <li class="placement hide"><a href="#placement">Placement</a></li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                          </svg>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="txt" data-aos = "fade-right">
+                <p>Welcome to your all-in-one educational resource! From SGPA to percentage conversion and CGPA calculation to scholarship details and interview preparation, explore our tools to enhance your academic journey and career success</p>
+                <div class="btn-group">
+                    <button class="btn1">Read more</button>
+                    <button class="btn1 sgpa_calculateHomePage">Get Started</button>
+                </div>
+            </div>
+            <div class="image" data-aos = "fade-left">
+                <img src="Images/student.png" alt="">
+            </div>
+        </div>
+        <!-- --------------------------------Calculator---------------------------- -->
+
+        <div class="sgpatopercentage">
+            <h3>Convert SGPA to percentage</h3>
+            <label for="sgpatext">Enter your SGPA</label>
+            <input type="text" name="sgpatext" id="sgpatext">
+            <button class="sgpacalbtn">Calculate</button>
+            <p class="percentageResult"></p>
+        </div>
+        <div class="cgpacalculator">
+            <h3>Calculate your CGPA</h3>
+            <label for="semtext">Enter total number of semester</label>
+            <input type="text" name="semtext" id="semtext">
+            <div class="seminputs">
+                <div class="oddsem">
+                    <div class="oddseminputs sem1">
+                        <label for="sem1">Enter semester 1 SGPA</label>
+                        <input type="text" name="sem1" id="sem1">
+                    </div>
+                    <div class="oddseminputs sem3">
+                        <label for="sem3">Enter semester 3 SGPA</label>
+                        <input type="text" name="sem3" id="sem3">
+                    </div>
+                    <div class="oddseminputs sem5">
+                        <label for="sem5">Enter semester 5 SGPA</label>
+                        <input type="text" name="sem5" id="sem5">
+                    </div>
+                    <div class="oddseminputs sem7">
+                        <label for="sem7">Enter semester 7 SGPA</label>
+                        <input type="text" name="sem7" id="sem7">
+                    </div>
+
+                </div>
+                <div class="evensem">
+                    <div class="evenseminputs sem2">
+                        <label for="sem2">Enter semester 2 SGPA</label>
+                        <input type="text" name="sem2" id="sem2">
+                    </div>
+                    <div class="evenseminputs sem4">
+                        <label for="sem4">Enter semester 4 SGPA</label>
+                        <input type="text" name="sem4" id="sem4">
+                    </div>
+                    <div class="evenseminputs sem6">
+                        <label for="sem6">Enter semester 6 SGPA</label>
+                        <input type="text" name="sem6" id="sem6">
+                    </div>
+                    <div class="evenseminputs sem8">
+                        <label for="sem8">Enter semester 8 SGPA</label>
+                        <input type="text" name="sem8" id="sem8">
+                    </div>
+                </div>
+            </div>
+            <button class="cgpacalbtn">Calculate</button>
+            <p class="cgpaResult"></p>
+        </div>
+    </section>
+    <!-- ------------------------Scholarship---------------------------------------- -->
+    <section class="scholarship" id="scholarship">
+        <div class="scholarship-content-main">
+            <div class="scholarship-sub-content">
+                <div class="img" data-aos = "fade-up" data-aos-delay = "50">
+                    <img src="Images/scholarship.jpg" alt="">
+                </div>
+                <div class="about" data-aos = "fade-up" data-aos-delay = "150">
+                    <h2>Unlock Your Potential with Scholarship Funds</h2>
+                    <p>Explore a wide range of scholarship opportunities and financial aid options to support your
+                        academic
+                        journey. Access detailed information on eligibility, application procedures, and deadlines for
+                        scholarships available across various universities.</p>
+                    <button class="scholarship_btn">Explore</button>
+                </div>
+            </div>
+            <div class="scholarship-list">
+                <svg id="list-cut" xmlns="http://www.w3.org/2000/svg " width="30" height="30" fill="currentColor"
+                    class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+                <div class="scholarship-name">
+
+                    <p>SVMCM</p>
+                    <a href="https://svmcm.wbhed.gov.in/" target="_blank"><button>View</button></a>
+                </div>
+                <div class="scholarship-name">
+
+                    <p>NSP</p>
+                    <a href="https://scholarships.gov.in/" target="_blank"><button>View</button></a>
+                </div>
+                <div class="scholarship-name">
+
+                    <p>JBNSTS</p>
+                    <a href="https://jbnsts.ac.in/" target="_blank"><button>View</button></a>
+                </div>
+                <div class="scholarship-name">
+
+                    <p>Kanyashree Prakalpa</p>
+                   
+                    <a href="https://www.wbkanyashree.gov.in/" target="_blank"><button>View</button></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ---------------------------Online Courses----------------------------------------- -->
+
+    <section class="scholarship" id="online-courses">
+        <div class="scholarship-content-main">
+            <div class="scholarship-sub-content online-courses-sub-content">
+                <div class="img" data-aos = "fade-up" data-aos-delay = "150">
+                    <img src="Images/online-courses.jpg" alt="">
+                </div>
+                <div class="about" data-aos = "fade-up" data-aos-delay = "50">
+                    <h2>Discover Top Online Courses</h2>
+                    <p>Explore our extensive online courses designed to boost your skills, advance your career, and
+                        pursue new interests from the comfort of home.</p>
+                    <button class="online-courses-btn">Explore</button>
+                </div>
+            </div>
+            <div class="online-courses-list">
+                <svg id="list-cut-course" xmlns="http://www.w3.org/2000/svg " width="30" height="30" fill="currentColor"
+                    class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+                <div class="online-courses-name">
+                    <p>Web Development</p>
+                    <button>View</button>
+                </div>
+                <div class="online-courses-name">
+
+                    <p>Data Science</p>
+                    <button>View</button>
+                </div>
+                <div class="online-courses-name">
+
+                    <p>Digital Marketing</p>
+                    <button>View</button>
+                </div>
+                <div class="online-courses-name">
+
+                    <p>Other courses</p>
+                    <button>View</button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ----------------------------Interview Section-------------------------------- -->
+    <section class="placement-preparation" id="placement">
+        <div class="placement-content">
+            <h3>Interview Preparation</h3>
+            <p>Prepare for success with our comprehensive placement and interview preparation section, offering expert tips, practice questions, and strategies for a successful career launch.</p>
+            <div class="buttons" data-aos="flip-left">
+           
+                    <a href="https://www.indiabix.com/aptitude/questions-and-answers/" target="_blank"><button>General Aptitude</button></a>
+
+                 <a href="https://www.indiabix.com/aptitude/questions-and-answers/" target="_blank"><button>Verbal and Reasoning</button></a>
+                 <a href="https://www.indiabix.com/current-affairs/questions-and-answers/" target="_blank"><button>Current Affairs & GK</button></a>
+                 <a href="https://www.indiabix.com/placement-papers/companies/" target="_blank"><button>Interview</button></a>
+                 <a href="https://www.indiabix.com/computer-science/questions-and-answers/" target="_blank"><button>Engineering</button></a>
+                 <a href=""><button>Programming</button></a>
+                 <a href=""><button>Technical MCQs</button></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 | developed by <a href="https://subrata-bera.github.io/subratabera" target="_blank">subrata
+                bera</a></p>
+    </footer>
+
+
+
+
+
+    <script src="JavaScript/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+     AOS.init({
+      duration:800,
+    once:false});
+  </script>
+
+
+</body>
+
+</html>

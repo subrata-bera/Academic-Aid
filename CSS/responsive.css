@@ -1,0 +1,178 @@
+@media (max-width:1000px) and (min-width: 600px) {
+  .items ul .hide{
+    display: none;
+}
+.items{
+  position: absolute;
+  left: 300px;
+}
+}
+@media (max-width:870px) and (min-width: 600px){
+  .items{
+    position: absolute;
+    left: 250px;
+  }
+}
+@media (max-width: 800px) and (min-width: 600px){
+  .items{
+    position: absolute;
+    left: 200px;
+  }
+}
+@media (max-width: 740px) and (min-width: 600px){
+  .nav h2{
+    display: none;
+  }
+  .nav{
+    margin-top: 4vh;
+  }
+  .items{ 
+    position: absolute;
+    left: 90px;
+  }
+}
+@media (max-width:600px) {
+    .main{
+        position: relative;
+    }
+    .nav .logo h2{
+      margin-left: 3vw;
+    }
+    
+    .items ul .hide{
+      display: none;
+    }
+    .items ul .show1{
+        position: absolute; 
+        bottom: 10vh;
+        left: 5vw;
+        padding: 2vh 2vh;
+    }
+    .items ul .show2{
+        position: absolute; 
+        bottom: 10vh;
+        right: 7vw;
+        padding: 2vh 2vh;
+    }
+    .btn1{
+        display: none;
+    }
+    .sgpatopercentage {
+        width: 100%;
+      }
+      .sgpatopercentage input {
+        margin-top: 5vmin;
+        width: 80%;
+        height: 6%;
+        padding: 1vh 2vh;
+        font-size: 2.5vmax;
+      }
+    .sgpatopercentage p,
+    .cgpacalculator p {
+  font-size: 2.8vmax;
+}
+.sgpatopercentage button,
+.cgpacalculator button {
+  padding: 2vh 10vw;
+  font-size: 2.3vmax;
+}
+.cgpacalculator {
+    position: absolute;
+    top: 9vh;
+  }
+  .cgpacalculator input {
+    height: 4vh;
+    margin: 0.5vh 0 1.2vh 0;
+  }
+  .oddsem{
+    margin-left: 2.5vw;
+  }
+  .seminputs input{
+    width: 90%;
+  }
+  .scholarship-list, .online-courses-list{
+    height: 100%;
+    gap: 15px;
+  }
+  .scholarship-list .scholarship-name, .online-courses-list .online-courses-name {
+    height: 120px;
+  }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .content .image{
+        width: 100%;
+        height: 50%;
+    }
+    .content .image img {
+        width: 90%;
+        height: 100%;
+      }
+      .content .txt {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        margin-top: 1.5vh;
+       
+      }
+      .content button {
+        padding: 1.8vh 4vmax;
+        margin: 0 10px;
+      }
+      .content p {
+        width: 90%;
+        font-size: 2.8vmax;
+      }
+      .scholarship-content-main{
+        height: 75vh;
+      }
+      .scholarship-sub-content{
+        flex-direction: column;
+        gap: 0;
+        /* height: 80%; */
+      }
+      .scholarship .img{
+        width: 100%;
+        height: 100%;
+      }
+      .scholarship .about{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+        justify-content: initial;
+      }
+      .scholarship_btn, .online-courses-btn{
+        padding: 2vh 4vmax;
+      }
+      .scholarship .about h2{
+        width: 90%;
+        font-size: 18px;
+        text-align: center;
+      }
+      .scholarship .img img{
+        width: 95%;
+      }
+      .scholarship p{
+        font-size: 20px;
+      }
+      .placement-preparation{
+        width: 100%;
+        height: 100%;
+      }
+      .placement-content h3{
+        font-size: 30px;
+      }
+      .placement-content p{
+        width: 95%;
+        font-size: 18px;
+      }
+      .buttons{
+       margin: 0 0 2vh 2vw;
+      }
+      footer{
+        font-size: 10px;
+      }
+      .placement-content button{
+        padding: 15px ;
+      }
+}
